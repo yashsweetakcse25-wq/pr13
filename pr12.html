@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodoraa - Food Delivery </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8f9fa; }
+        .hero-section { padding: 100px 0; background: linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('home.jpg') center/cover no-repeat; color: #fff; }
+        .hero-section h1 { font-size: 3rem; font-weight: 700; }
+        .hero-section p { font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+        .card { transition: transform 0.3s, box-shadow 0.3s; }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 16px 30px rgba(0,0,0,0.12); }
+        .section-padding { padding: 80px 0; }
+        .section-title { position: relative; display: inline-block; margin-bottom: 40px; }
+        .section-title::after { content: ''; width: 60px; height: 3px; background: #ff6b6b; display: block; margin: 12px auto 0; }
+        .navbar-brand { font-weight: 700; color: #ffca28 !important; }
+        .footer { padding: 30px 0; background: #212529; color: #adb5bd; }
+        .footer a { color: #ffca28; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Foodoraa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#veg">Veg</a></li>
+                            <li><a class="dropdown-item" href="#non-veg">Non-Veg</a></li>
+                            <li><a class="dropdown-item" href="#chinese">Chinese</a></li>
+                            <li><a class="dropdown-item" href="#desserts">Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section text-center d-flex align-items-center" style="min-height: 70vh;">
+        <div class="container">
+            <h1>Delicious Food Delivered Fast</h1>
+            <p>Order from the best local hotels or book a table instantly. Enjoy fresh meals, quick delivery, and great service.</p>
+        </div>
+    </section>
+    <section id="home" class="container section-padding">
+        <h2 class="text-center section-title">Featured Dishes</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card overflow-hidden">
+                    <img src="fifteen.jpg" class="card-img-top" alt="Delicious Meal">
+                    <div class="card-body">
+                        <h5 class="card-title">Chef's Special Thali</h5>
+                        <p class="card-text">A rich platter featuring all the best flavors from our kitchen, served fresh and hot.</p>
+                        <span class="badge bg-danger">₹450</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card overflow-hidden">
+                    <img src="home.jpg" class="card-img-top" alt="Hotel Dining">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Laziz Special</h5>
+                        <p class="card-text">A premium hotel-style meal designed for families and special occasions.</p>
+                        <span class="badge bg-danger">₹520</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="veg" class="container section-padding bg-white rounded-4 shadow-sm">
+        <h2 class="text-center section-title">Veg Menu</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="fourteen.jpg" class="card-img-top" alt="Punjabi Thali">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Punjabi Thali</h5>
+                        <p class="card-text">A hearty vegetarian thali with classic curries, paneer, and bread.</p>
+                        <p class="fw-bold">₹400</p>
+                        <button class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <img src="thirteen.jpg" class="card-img-top" alt="South Indian Thali">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">South Indian Thali</h5>
+                        <p class="card-text">Fresh dosa, idli, sambar, and coconut chutney to satisfy your cravings.</p>
+                        <p class="fw-bold">₹350</p>
+                        <button class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="non-veg" class="container section-padding">
+        <h2 class="text-center section-title">Non-Veg Menu</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="card-body">
+                        <h5>Butter Chicken</h5>
+                        <p>A rich and creamy chicken curry with buttery tomato gravy.</p>
+                        <p class="fw-bold">₹420</p>
+                        <button class="btn btn-outline-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="card-body">
+                        <h5>Chicken Biryani</h5>
+                        <p>Fragrant rice layered with tender chicken and aromatic spices.</p>
+                        <p class="fw-bold">₹480</p>
+                        <button class="btn btn-outline-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="card-body">
+                        <h5>Grilled Fish</h5>
+                        <p>Lightly spiced fish filet grilled to perfection with herbs.</p>
+                        <p class="fw-bold">₹530</p>
+                        <button class="btn btn-outline-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chinese" class="container section-padding bg-white rounded-4 shadow-sm">
+        <h2 class="text-center section-title">Chinese Favorites</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="card-body">
+                        <h5>Veg Noodles</h5>
+                        <p>Crispy vegetables tossed with savory noodles and sauce.</p>
+                        <p class="fw-bold">₹260</p>
+                        <button class="btn btn-outline-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="card-body">
+                        <h5>Manchurian</h5>
+                        <p>Spicy, tangy vegetable or chicken balls in a rich sauce.</p>
+                        <p class="fw-bold">₹300</p>
+                        <button class="btn btn-outline-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="desserts" class="container section-padding">
+        <h2 class="text-center section-title">Desserts</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <h5>Gulab Jamun</h5>
+                        <p>Classic warm syrup-soaked dumplings served with love.</p>
+                        <p class="fw-bold">₹120</p>
+                        <button class="btn btn-outline-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <h5>Chocolate Brownie</h5>
+                        <p>Rich molten brownie topped with whipped cream.</p>
+                        <p class="fw-bold">₹150</p>
+                        <button class="btn btn-outline-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Foodoraa. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const reservationForm = document.getElementById('reservationForm');
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        const successMessage = document.getElementById('successMessage');
+        reservationForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const hotel = document.getElementById('hotel').value;
+            const date = document.getElementById('date').value;
+            successMessage.textContent = `Thank you, ${name}! Your reservation at ${hotel} for ${date} is confirmed.`;
+            successModal.show();
+            reservationForm.reset();
+        });
+    </script>
+</body>
+</html>
